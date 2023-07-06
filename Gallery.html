@@ -1,0 +1,210 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Symphony's Gallery</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://kit.fontawesome.com/3477ae541c.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="Gallery.css">
+        
+    </head>
+    <body>
+        <a id="button">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+
+        </a>
+ 
+ <!-- navbar section -->
+ <div class="navigation">
+    <div class="container">
+        <ul>
+            <li class="list">
+                <a href="index.html">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span><br/><br/>
+                    <span class="text"style="margin-left:-5px">Home</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="About.html">
+                    <span class="icon">
+                        <ion-icon name="person-outline" style="margin-left:5px;"></ion-icon>
+                    </span><br/><br/>
+                    <span class="text"style="margin-left:-5px" >About</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="Menus.html">
+                    <span class="icon">
+                        <ion-icon name="fast-food-outline" ></ion-icon>
+                    </span><br/><br/>
+                    <span class="text" style="margin-left:-5px">Menus</span>
+                </a>
+            </li>
+
+            <li class="list active">
+                <a href="Gallery.html">
+                    <span class="icon">
+                        <ion-icon name="image-outline" ></ion-icon>
+                    </span><br/><br/>
+                    <span class="text" style="margin-left:-5px">Gallery</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="Teams.html">
+                    <span class="icon">
+                        <ion-icon name="people-outline" ></ion-icon>
+                    </span><br/><br/>
+                    <span class="text" style="margin-left:-5px">Teams</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="Contact.html">
+                    <span class="icon">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </span><br/><br/>
+                    <span class="text"style="margin-left:-5px" >Contact</span>
+                </a>
+            </li>
+            <div class="indicator"></div>
+        </ul>
+    </div>
+</div>
+<!-- navbar section ends -->
+
+<!-- gallery -->
+    <div class="gallery-container">
+        <div class="gallery-item" data-index="1"><img src="./images/cafe1.jpg" alt=""></div>
+        <div class="gallery-item" data-index="2"><img src="./images/artizan.jpg" alt=""></div>
+        <div class="gallery-item" data-index="3"><img src="./images/burger.jpg" alt=""></div>
+        <div class="gallery-item" data-index="4"><img src="./images/cafe2.jpg" alt=""></div>
+        <div class="gallery-item" data-index="5"><img src="./images/cafeparaiso.jpg" alt=""></div>
+        <div class="gallery-item" data-index="6"><img src="./images/orangejuice.jpg" alt=""></div>
+        <div class="gallery-item" data-index="7"><img src="./images/coke.jpg" alt=""></div>
+        <div class="gallery-item" data-index="8"><img src="./images/muffins.jpg" alt=""></div>
+        <div class="gallery-item" data-index="9"><img src="./images/crossiant.jpg" alt=""></div>
+        <div class="gallery-item" data-index="10"><img src="./images/cafe3.jpg" alt=""></div>
+        <div class="gallery-item" data-index="11"><img src="./images/Macrons.jpg" alt=""></div>
+        <div class="gallery-item" data-index="12"><img src="./images/donuts.jpg" alt=""></div>
+        <div class="gallery-item" data-index="13"><img src="./images/salmonsandwich.jpg" alt=""></div>
+        <div class="gallery-item" data-index="14"><img src="./images/waffles.jpg" alt=""></div>
+        <div class="gallery-item" data-index="15"><img src="./images/tacos.jpg" alt=""></div>
+        <div class="gallery-item" data-index="16"><img src="./images/tiramisu.webp" alt=""></div>
+        <div class="gallery-item" data-index="17"><img src="./images/roastedcoffeebeans.jpeg" alt=""></div>
+        <div class="gallery-item" data-index="18"><img src="./images/pancakes.jpg" alt=""></div>
+        <div class="gallery-item" data-index="19"><img src="./images/espresso.webp" alt=""></div>
+        <div class="gallery-item" data-index="20"><img src="./images/affogato.avif" alt=""></div>
+        <div class="gallery-item" data-index="21"><img src="./images/cafe4.webp" alt=""></div>
+
+    </div>
+<!-- gallery ends -->
+
+<!-- javascript -->
+<script>
+    const galleryItem = document.getElementsByClassName("gallery-item");
+    // create element for lightbox
+    const lightBoxContainer = document.createElement("div");
+    // for basic area
+    const lightBoxContent = document.createElement("div");
+    // for images
+    const lightBoxImg = document.createElement("img");
+    // for prev button to change images
+    const lightBoxPrev = document.createElement("div");
+    // for next button
+    const lightBoxNext = document.createElement("div");
+   
+   // create classlist
+
+   lightBoxContainer.classList.add('lightbox');
+   lightBoxContent.classList.add('lightbox-content');
+   lightBoxPrev.classList.add("fa","fa-angle-left","lightbox-prev");
+   lightBoxNext.classList.add("fa","fa-angle-right","lightbox-next");
+
+
+    lightBoxContainer.appendChild(lightBoxContent);
+    lightBoxContent.appendChild(lightBoxImg);
+    lightBoxContent.appendChild(lightBoxPrev);
+    lightBoxContent.appendChild(lightBoxNext);
+    document.body.appendChild(lightBoxContainer);
+
+    let index=1;
+
+    // create function
+
+    function showLightBox(n){
+        if(n > galleryItem.length){
+            index=1;
+        }
+        else if(n < 1){
+            index = galleryItem.length;
+        }
+        let imageLocation = galleryItem[index-1].children[0].getAttribute("src");
+        lightBoxImg.setAttribute("src", imageLocation);
+    }
+        function  currentImage(){
+            lightBoxContainer.style.display="block";
+
+            let imageIndex = parseInt(this.getAttribute("data-index"));
+            showLightBox(index = imageIndex);
+        }
+        for(let i=0;i<galleryItem.length;i++){
+            galleryItem[i].addEventListener("click",currentImage);
+        }
+
+        function sliderImage(n){
+            showLightBox(index+=n);
+        }
+        
+        function prevImage(){
+            sliderImage(-1);
+        }
+        function nextImage(){
+            sliderImage(1);
+        }
+
+        lightBoxPrev.addEventListener("click",prevImage);
+        lightBoxNext.addEventListener("click",nextImage);
+
+        // close lightbox
+
+        function closeLightBox(){
+            if(this === event.target){
+                lightBoxContainer.style.display = "none";
+            }
+        }
+
+        lightBoxContainer.addEventListener("click",closeLightBox);
+</script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+
+        <!-- scroll to top button -->
+        <script type="text/javascript">
+    
+            var btn = $('#button');
+          
+          $(window).scroll(function() {
+            if ($(window).scrollTop() > 50) {
+              btn.addClass('show');
+            } else {
+              btn.removeClass('show');
+            }
+          });
+          
+          btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '50');
+          });
+              
+            </script>
+    </body>
+</html>

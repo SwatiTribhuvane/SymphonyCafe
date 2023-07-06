@@ -1,0 +1,138 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>About Symphony</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />        <link rel="stylesheet" href="index.css">
+	
+        <link rel="stylesheet" href="About.css">
+        
+    </head>
+    <body>
+        <a id="button">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+
+        </a>
+        <!-- navbar section -->
+        <div class="navigation">
+            <div class="container">
+                <ul>
+                    <li class="list">
+                        <a href="index.html">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span><br/><br/>
+                            <span class="text"style="margin-left:-5px">Home</span>
+                        </a>
+                    </li>
+    
+                    <li class="list active">
+                        <a href="About.html">
+                            <span class="icon">
+                                <ion-icon name="person-outline" style="margin-left:5px;"></ion-icon>
+                            </span><br/><br/>
+                            <span class="text"style="margin-left:-5px" >About</span>
+                        </a>
+                    </li>
+    
+                    <li class="list">
+                        <a href="Menus.html">
+                            <span class="icon">
+                                <ion-icon name="fast-food-outline" ></ion-icon>
+                            </span><br/><br/>
+                            <span class="text" style="margin-left:-5px">Menus</span>
+                        </a>
+                    </li>
+    
+                    <li class="list">
+                        <a href="Gallery.html">
+                            <span class="icon">
+                                <ion-icon name="image-outline" ></ion-icon>
+                            </span><br/><br/>
+                            <span class="text" style="margin-left:-5px">Gallery</span>
+                        </a>
+                    </li>
+    
+                    <li class="list">
+                        <a href="Teams.html">
+                            <span class="icon">
+                                <ion-icon name="people-outline" ></ion-icon>
+                            </span><br/><br/>
+                            <span class="text" style="margin-left:-5px">Teams</span>
+                        </a>
+                    </li>
+    
+                    <li class="list">
+                        <a href="Contact.html">
+                            <span class="icon">
+                                <ion-icon name="call-outline"></ion-icon>
+                            </span><br/><br/>
+                            <span class="text"style="margin-left:-5px" >Contact</span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+            </div>
+</div>
+<!-- navbar section ends -->
+        
+        <h1>About Us</h1>
+        <p>Coffee is a beloved enjoyed by millions worldwide for its bold flavour, rich aroma and comforting warmth in every sip </p>
+        <div class="container">
+            <section class="about">
+                <div class="about-image">
+                    <img src="./images/hot coffee.jpg" alt=""/>
+                </div>
+                <div class="about-content">
+                    <h2>Warm embrace in a cup </h2>
+                    <p>Coffee is a beloved enjoyed by millions worldwide for its bold flavour, rich aroma and comforting warmth in every sip. It's often considered an essential morning pick-me-up,but can be enjoyed at any time of day. Whether sipping alone or with company, coffee provides the perfect accompaniment to converstaion and socializing. </p>
+                </div>
+            </section>
+        </div>
+
+        <h1 style="font-size:50px;margin-top:150px;color:#E3AC6D;">What Makes Our Coffee So Special ?</h1>
+        <div class="container">
+            <section class="about">
+                <div class="about-content">
+                    <p style="padding:20px;margin-top:0px;margin-left:-10px;">We can guarantee you received the freshest coffee anywhere. Even though our roasted coffee can be stored for 4 - 6 months in a cool, dry place, we don't warehouse roasted coffee. Even the coffee sold to stores are roasted and put into stores well within a week. The coffee bean we buy, we typically don’t roast immediately, and instead age it for at least a year. Like a fine wine that gets better after some years "resting" before being consumed, we feel our coffee is softer yet bigger because we age it to reduce acids giving it a smoother taste.</p>
+                    <!-- button  -->
+                    <button type="button" class="main-btn">
+                        <div class="effect"></div>
+                        <span><a href="Menus.html">Explore Our Delicious Menus</a></span>
+                    </button>
+                    <!-- button end -->
+                </div>
+                <div class="about-image" id="secondimg">
+                    <img src="./images/coffee3.jpg" alt="" style="margin-bottom:80px;"/>
+                </div>
+            </section>
+        </div>
+        
+        
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script  src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+
+        <!-- scroll to top button -->
+        <script type="text/javascript">
+    
+            var btn = $('#button');
+          
+          $(window).scroll(function() {
+            if ($(window).scrollTop() > 50) {
+              btn.addClass('show');
+            } else {
+              btn.removeClass('show');
+            }
+          });
+          
+          btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '50');
+          });
+              
+            </script> 
+
+    </body>
+</html>

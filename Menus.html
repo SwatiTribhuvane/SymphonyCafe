@@ -1,0 +1,826 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Symphony's Menus</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js" integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://kit.fontawesome.com/3477ae541c.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />        <link rel="stylesheet" href="index.css">
+
+        <link rel="stylesheet" href="Menus.css">
+        
+    </head>
+    <body>
+        <a id="button">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+
+        </a>
+        <!-- navbar section -->
+        <div class="navigation">
+            <div class="container">
+                <ul>
+                    <li class="list">
+                        <a href="index.html">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span><br/><br/>
+                            <span class="text"style="margin-left:-5px">Home</span>
+                        </a>
+                    </li>
+    
+                    <li class="list">
+                        <a href="About.html">
+                            <span class="icon">
+                                <ion-icon name="person-outline" style="margin-left:5px;"></ion-icon>
+                            </span><br/><br/>
+                            <span class="text"style="margin-left:-5px" >About</span>
+                        </a>
+                    </li>
+    
+                    <li class="list active">
+                        <a href="Menus.html">
+                            <span class="icon">
+                                <ion-icon name="fast-food-outline" ></ion-icon>
+                            </span><br/><br/>
+                            <span class="text" style="margin-left:-5px">Menus</span>
+                        </a>
+                    </li>
+    
+                    <li class="list">
+                        <a href="Gallery.html">
+                            <span class="icon">
+                                <ion-icon name="image-outline" ></ion-icon>
+                            </span><br/><br/>
+                            <span class="text" style="margin-left:-5px">Gallery</span>
+                        </a>
+                    </li>
+    
+                    <li class="list">
+                        <a href="Teams.html">
+                            <span class="icon">
+                                <ion-icon name="people-outline" ></ion-icon>
+                            </span><br/><br/>
+                            <span class="text" style="margin-left:-5px">Teams</span>
+                        </a>
+                    </li>
+    
+                    <li class="list">
+                        <a href="Contact.html">
+                            <span class="icon">
+                                <ion-icon name="call-outline"></ion-icon>
+                            </span><br/><br/>
+                            <span class="text"style="margin-left:-5px" >Contact</span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+            </div>
+</div>
+<!-- navbar section ends -->
+        <!-- coffee menu -->
+        <div class="container">
+            <h3 class="heading">Coffee Menus</h3>
+
+            <div class="menu-container">
+                <div class="menu" data-name="c-1"> 
+                    <img src="./images/coffee.jpg" alt=""/><br/>
+                    <h3>Coffee Latte</h3>
+                    <div class="price">$20.00</div>
+                </div>
+
+
+                <div class="menu" data-name="c-2" >
+                    <img src="./images/espresso.webp" alt="">
+                    <h3>Espresso Coffee</h3>
+                    <div class="price">$25.00</div>
+                </div>
+
+                <div class="menu" data-name="c-3">
+                    <img src="./images/icedcoffeemain.avif" alt="">
+                    <h3>Iced Coffee</h3>
+                    <div class="price">$55.00</div>
+                </div>
+
+                <div class="menu" data-name="c-4">
+                    <img src="./images/affogato.avif" alt="">
+                    <h3>Affogato Coffee</h3>
+                    <div class="price">$30.00</div>
+                </div>
+
+                <div class="menu" data-name="c-5">
+                    <img src="./images/cafemocha.jpg" alt="">
+                    <h3>Cafe Mocha</h3>
+                    <div class="price">$20.00</div>
+                </div>
+
+                <div class="menu" data-name="c-6">
+                    <img src="./images/irishcoffee.jpg" alt="">
+                    <h3>Irish Coffee</h3>
+                    <div class="price">$20.00</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-preview">
+            <div class="preview active" id="pr1" data-target="c-1">
+                <i class="fa-solid fa-xmark"></i>
+                <img src="./images/coffee.jpg" alt="">
+                <h3>Coffee Latte</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                <div class="price">$20.00</div>
+                <a href="#">Order Now</a>
+            </div>
+
+            <div class="preview" data-target="c-2">
+                <i class="fa-solid fa-xmark"></i>
+                <img src="./images/espresso.webp" alt="">
+                <h3>Espresso coffee</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                <div class="price">$20.00</div>
+                <a href="#">Order Now</a>
+            </div>
+
+            <div class="preview" data-target="c-3">
+                <i class="fa-solid fa-xmark"></i>
+                <img src="./images/icedcoffeemain.avif" alt="">
+                <h3>Iced coffee</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                <div class="price">$20.00</div>
+                <a href="#">Order Now</a>
+            </div>
+
+            <div class="preview" data-target="c-4">
+                <i class="fa-solid fa-xmark"></i>
+                <img src="./images/affogato.avif" alt="">
+                <h3>Affogato coffee</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                <div class="price">$20.00</div>
+                <a href="#">Order Now</a>
+            </div>
+
+            <div class="preview" data-target="c-5">
+                <i class="fa-solid fa-xmark"></i>
+                <img src="./images/cafemocha.jpg" alt="">
+                <h3>Cafe Mocha</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                <div class="price">$20.00</div>
+                <a href="#">Order Now</a>
+            </div>
+
+
+            <div class="preview" data-target="c-6">
+                <i class="fa-solid fa-xmark"></i>
+                <img src="./images/irishcoffee.jpg" alt="">
+                <h3>Irish coffee</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                <div class="price">$20.00</div>
+                <a href="#">Order Now</a>
+            </div>
+            </div>
+            <!-- coffee ends -->
+
+            <!-- breakfast -->
+                <div class="container2">
+                    <h3 style="font-size:3.2rem;color:#E3AC6D;margin-bottom:3rem;margin-top:100px;text-align:center;">Breakfast Menus</h3>
+                    <div class="menu-container2">
+                        <div class="menu2" data-name="c-1">
+                            <img src="./images/crossiant.jpg" alt="">
+                            <h3>Crossiants</h3>
+                            <div class="price">$20.00</div>
+                        </div>
+        
+                        <div class="menu2" data-name="c-2">
+                            <img src="./images/burger.jpg" alt="">
+                            <h3>Veg Burger</h3>
+                            <div class="price">$25.00</div>
+                        </div>
+        
+                        <div class="menu2" data-name="c-3">
+                            <img src="./images/waffles.jpg" alt="">
+                            <h3>Waffles</h3>
+                            <div class="price">$55.00</div>
+                        </div>
+        
+                        <div class="menu2" data-name="c-4">
+                            <img src="./images/salmonsandwich.jpg" alt="">
+                            <h3>Salmon Sandwich</h3>
+                            <div class="price">$50.00</div>
+                        </div>
+        
+                        <div class="menu2" data-name="c-5">
+                            <img src="./images/Cheese Pizza.jpg" alt="">
+                            <h3>Cheese Pizza</h3>
+                            <div class="price">$20.00</div>
+                        </div>
+        
+                        <div class="menu2" data-name="c-6">
+                            <img src="./images/tacos.jpg" alt="">
+                            <h3>Tacos</h3>
+                            <div class="price">$20.00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-preview2">
+                    <div class="preview2 active" id="pr2"data-target="c-1">
+                        <i class="fa-solid fa-xmark"></i>
+                        <img src="./images/crossiant.jpg" alt="">
+                        <h3>Crossiants</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                        <div class="price">$20.00</div>
+                        <a href="#">Order Now</a>
+                    </div>
+        
+                    <div class="preview2" data-target="c-2">
+                        <i class="fa-solid fa-xmark"></i>
+                        <img src="./images/burger.jpg" alt="">
+                        <h3>Veg Burger</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                        <div class="price">$20.00</div>
+                        <a href="#">Order Now</a>
+                    </div>
+        
+                    <div class="preview2" data-target="c-3">
+                        <i class="fa-solid fa-xmark"></i>
+                        <img src="./images/waffles.jpg" alt="">
+                        <h3>Waffles</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                        <div class="price">$20.00</div>
+                        <a href="#">Order Now</a>
+                    </div>
+        
+                    <div class="preview2" data-target="c-4">
+                        <i class="fa-solid fa-xmark"></i>
+                        <img src="./images/salmonsandwich.jpg" alt="">
+                        <h3>Salmon Sandwich</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                        <div class="price">$20.00</div>
+                        <a href="#">Order Now</a>
+                    </div>
+        
+                    <div class="preview2" data-target="c-5">
+                        <i class="fa-solid fa-xmark"></i>
+                        <img src="./images/Cheese Pizza.jpg" alt="">
+                        <h3>Cheese Pizza</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                        <div class="price">$20.00</div>
+                        <a href="#">Order Now</a>
+                    </div>
+        
+        
+                    <div class="preview2" data-target="c-6">
+                        <i class="fa-solid fa-xmark"></i>
+                        <img src="./images/tacos.jpg" alt="">
+                        <h3>Tacos</h3>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                        <div class="price">$20.00</div>
+                        <a href="#">Order Now</a>
+                    </div>
+        
+                
+                </div>
+            
+            <!-- breakfast ends -->
+
+            <!-- Desserts -->
+            <div class="container3">
+                <h3 style="font-size:3.2rem;color:#E3AC6D;margin-bottom:3rem;margin-top:100px;text-align:center;">Desserts Menus</h3>
+                <div class="menu-container3">
+                    <div class="menu3" data-name="c-1">
+                        <img src="./images/pestry.jpg" alt="">
+                        <h3>Chocolate Pestry</h3>
+                        <div class="price">$20.00</div>
+                    </div>
+    
+                    <div class="menu3" data-name="c-2">
+                        <img src="./images/donuts.jpg" alt="">
+                        <h3>Doughnuts</h3>
+                        <div class="price">$25.00</div>
+                    </div>
+    
+                    <div class="menu3" data-name="c-3">
+                        <img src="./images/pancakes.jpg" alt="">
+                        <h3>Pancakes</h3>
+                        <div class="price">$55.00</div>
+                    </div>
+    
+                    <div class="menu3" data-name="c-4">
+                        <img src="./images/muffins.jpg" alt="">
+                        <h3>Chocolate Muffins </h3>
+                        <div class="price">$50.00</div>
+                    </div>
+    
+                    <div class="menu3" data-name="c-5">
+                        <img src="./images/Macrons.jpg" alt="">
+                        <h3>Macaroons</h3>
+                        <div class="price">$20.00</div>
+                    </div>
+    
+                    <div class="menu3" data-name="c-6">
+                        <img src="./images/Icecream.jpg" alt="">
+                        <h3>Chocolate Icecream</h3>
+                        <div class="price">$20.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-preview3">
+                <div class="preview3 active" id="pr3" data-target="c-1">
+                    <i class="fa-solid fa-xmark"></i>
+                    <img src="./images/pestry.jpg" alt="">
+                    <h3>Chocolate Pestry</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                    <div class="price">$20.00</div>
+                    <a href="#">Order Now</a>
+                </div>
+    
+                <div class="preview3" data-target="c-2">
+                    <i class="fa-solid fa-xmark"></i>
+                    <img src="./images/donuts.jpg" alt="">
+                    <h3>Doughnuts</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                    <div class="price">$20.00</div>
+                    <a href="#">Order Now</a>
+                </div>
+    
+                <div class="preview3" data-target="c-3">
+                    <i class="fa-solid fa-xmark"></i>
+                    <img src="./images/pancakes.jpg" alt="">
+                    <h3>Pancakes</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                    <div class="price">$20.00</div>
+                    <a href="#">Order Now</a>
+                </div>
+    
+                <div class="preview3" data-target="c-4">
+                    <i class="fa-solid fa-xmark"></i>
+                    <img src="./images/muffins.jpg" alt="">
+                    <h3>Chocolate Muffins </h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                    <div class="price">$20.00</div>
+                    <a href="#">Order Now</a>
+                </div>
+    
+                <div class="preview3" data-target="c-5">
+                    <i class="fa-solid fa-xmark"></i>
+                    <img src="./images/Macrons.jpg" alt="">
+                    <h3>Macaroons</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                    <div class="price">$20.00</div>
+                    <a href="#">Order Now</a>
+                </div>
+    
+    
+                <div class="preview3" data-target="c-6">
+                    <i class="fa-solid fa-xmark"></i>
+                    <img src="./images/Icecream.jpg" alt="">
+                    <h3>Chocolate Icecream</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                    <div class="price">$20.00</div>
+                    <a href="#">Order Now</a>
+                </div>
+    
+            
+            </div>
+            <!-- Desserts End -->
+
+            <!-- drinks menus -->
+            <div class="container4">
+                <h3 style="font-size:3.2rem;color:#E3AC6D;margin-bottom:3rem;margin-top:100px;text-align:center;">Drinks Menus</h3>
+                <div class="menu-container4">
+                    <div class="menu4" data-name="c-1">
+                        <img src="./images/orangejuice.jpg" alt="">
+                        <h3>Orange Juice</h3>
+                        <div class="price">$15.00</div>
+                    </div>
+    
+                    <div class="menu4" data-name="c-2">
+                        <img src="./images/strawberryjuice.jpg" alt="">
+                        <h3>Strawberry Juice</h3>
+                        <div class="price">$25.00</div>
+                    </div>
+    
+                    <div class="menu4" data-name="c-3">
+                        <img src="./images/coke.jpg" alt="">
+                        <h3>Coke</h3>
+                        <div class="price">$55.00</div>
+                    </div>
+    
+                    <div class="menu4" data-name="c-4">
+                        <img src="./images/carrotjuice.jpg" alt="">
+                        <h3>Carrot Juice</h3>
+                        <div class="price">$50.00</div>
+                    </div>
+    
+                    <div class="menu4" data-name="c-5">
+                        <img src="./images/lemonjuice.jpg" alt="">
+                        <h3>Lemon Juice</h3>
+                        <div class="price">$20.00</div>
+                    </div>
+    
+                    <div class="menu4" data-name="c-6">
+                        <img src="./images/pomegranatejuice.jpg" alt="">
+                        <h3>Pomegranate Juice</h3>
+                        <div class="price">$20.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-preview4">
+                <div class="preview4 active" id="pr4"data-target="c-1">
+                    <i class="fa-solid fa-xmark"></i>
+                    <img src="./images/orangejuice.jpg" alt="">
+                    <h3>Orange Juice</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                    <div class="price">$15.00</div>
+                    <a href="#">Order Now</a>
+                </div>
+    
+                <div class="preview4" data-target="c-2">
+                    <i class="fa-solid fa-xmark"></i>
+                    <img src="./images/strawberryjuice.jpg" alt="">
+                    <h3>Strawberry Juice</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                    <div class="price">$20.00</div>
+                    <a href="#">Order Now</a>
+                </div>
+    
+                <div class="preview4" data-target="c-3">
+                    <i class="fa-solid fa-xmark"></i>
+                    <img src="./images/coke.jpg" alt="">
+                    <h3>Coke</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                    <div class="price">$20.00</div>
+                    <a href="#">Order Now</a>
+                </div>
+    
+                <div class="preview4" data-target="c-4">
+                    <i class="fa-solid fa-xmark"></i>
+                    <img src="./images/carrotjuice.jpg" alt="">
+                    <h3>Carrot Juice</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                    <div class="price">$20.00</div>
+                    <a href="#">Order Now</a>
+                </div>
+    
+                <div class="preview4" data-target="c-5">
+                    <i class="fa-solid fa-xmark"></i>
+                    <img src="./images/lemonjuice.jpg" alt="">
+                    <h3>Lemon Juice</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                    <div class="price">$20.00</div>
+                    <a href="#">Order Now</a>
+                </div>
+    
+    
+                <div class="preview4" data-target="c-6">
+                    <i class="fa-solid fa-xmark"></i>
+                    <img src="./images/pomegranatejuice.jpg" alt="">
+                    <h3>Pomegranate Juice</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                    <div class="price">$20.00</div>
+                    <a href="#">Order Now</a>
+                </div>
+            </div>
+            <!-- drinks menus end -->
+
+            <!-- beans menus -->
+            <div class="container5">
+                <h3 style="font-size:3.2rem;color:#E3AC6D;margin-bottom:3rem;margin-top:100px;text-align:center;">Beans Menus</h3>
+                <div class="menu-container5">
+                    <div class="menu5" data-name="c-1">
+                        <img src="./images/roastedcoffeebeans.jpeg" alt="">
+                        <h3>Native Coffee</h3>
+                        <div class="price">$15.00</div>
+                    </div>
+    
+                    <div class="menu5" data-name="c-2">
+                        <img src="./images/Beanbox.jpg" alt="">
+                        <h3>Bean Box</h3>
+                        <div class="price">$25.00</div>
+                    </div>
+    
+                    <div class="menu5" data-name="c-3">
+                        <img src="./images/wholebean.webp" alt="">
+                        <h3>Whole Beans</h3>
+                        <div class="price">$55.00</div>
+                    </div>
+    
+                    <div class="menu5" data-name="c-4">
+                        <img src="./images/foursigmatic.jpg" alt="">
+                        <h3>Four Sigmatic</h3>
+                        <div class="price">$50.00</div>
+                    </div>
+    
+                    <div class="menu5" data-name="c-5">
+                        <img src="./images/artizan.jpg" alt="">
+                        <h3>Artizan Coffee</h3>
+                        <div class="price">$20.00</div>
+                    </div>
+    
+                    <div class="menu5" data-name="c-6">
+                        <img src="./images/purity1.jpg" alt="">
+                        <h3>Purity Coffee</h3>
+                        <div class="price">$20.00</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-preview5">
+                <div class="preview5 active" id="pr5" data-target="c-1">
+                    <i class="fa-solid fa-xmark"></i>
+                    <img src="./images/roastedcoffeebeans.jpeg" alt="">
+                    <h3>Native Coffee</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                    <div class="price">$15.00</div>
+                    <a href="#">Order Now</a>
+                </div>
+    
+                <div class="preview5" data-target="c-2">
+                    <i class="fa-solid fa-xmark"></i>
+                    <img src="./images/Beanbox.jpg" alt="">
+                    <h3>Bean Box</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                    <div class="price">$20.00</div>
+                    <a href="#">Order Now</a>
+                </div>
+    
+                <div class="preview5" data-target="c-3">
+                    <i class="fa-solid fa-xmark"></i>
+                    <img src="./images/wholebean.webp" alt="">
+                    <h3>Whole Beans</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                    <div class="price">$20.00</div>
+                    <a href="#">Order Now</a>
+                </div>
+    
+                <div class="preview5" data-target="c-4">
+                    <i class="fa-solid fa-xmark"></i>
+                    <img src="./images/foursigmatic.jpg" alt="">
+                    <h3>Four Sigmatic</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                    <div class="price">$20.00</div>
+                    <a href="#">Order Now</a>
+                </div>
+    
+                <div class="preview5" data-target="c-5">
+                    <i class="fa-solid fa-xmark"></i>
+                    <img src="./images/artizan.jpg" alt="">
+                    <h3>Artizan Coffee</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                    <div class="price">$20.00</div>
+                    <a href="#">Order Now</a>
+                </div>
+    
+    
+                <div class="preview5" data-target="c-6">
+                    <i class="fa-solid fa-xmark"></i>
+                    <img src="./images/purity1.jpg" alt="">
+                    <h3>Purity Coffee</h3>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, assumenda?</p>
+                    <div class="price">$20.00</div>
+                    <a href="#">Order Now</a>
+                </div>
+            </div>
+            <button type="button" class="main-btn">
+                <div class="effect"></div>
+                <span><a href="Teams.html">Explore Our Creative Hands Behind It</a></span>
+            </button>
+            <!-- beans menu ends -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+
+        <!-- scroll to top button -->
+        <script type="text/javascript">
+    
+            var btn = $('#button');
+          
+          $(window).scroll(function() {
+            if ($(window).scrollTop() > 50) {
+              btn.addClass('show');
+            } else {
+              btn.removeClass('show');
+            }
+          });
+          
+          btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '50');
+          });
+              
+            </script>
+    </body>
+</html>
